@@ -1,0 +1,353 @@
+HOOK_INT(0x11D88, 8, 1, -1, 28, 0, -1) // 00011D88 x28+0x0
+HOOK_INT(0x11DA8, 8, 1, -1, 28, 8, -1) // 00011DA8 x28+0x8
+HOOK_INT(0x11DC8, 8, 1, -1, 28, 16, -1) // 00011DC8 x28+0x10
+HOOK_INT(0x11DE8, 8, 1, -1, 28, 24, -1) // 00011DE8 x28+0x18
+HOOK_INT(0x11E08, 8, 1, -1, 28, 32, -1) // 00011E08 x28+0x20
+HOOK_INT(0x11E28, 8, 1, -1, 28, 40, -1) // 00011E28 x28+0x28
+HOOK_INT(0x11E48, 8, 1, -1, 28, 48, -1) // 00011E48 x28+0x30
+HOOK_INT(0x11E68, 8, 1, -1, 28, 56, -1) // 00011E68 x28+0x38
+HOOK_INT(0x11E88, 8, 1, -1, 28, 64, -1) // 00011E88 x28+0x40
+HOOK_INT(0x11EA8, 8, 1, -1, 28, 72, -1) // 00011EA8 x28+0x48
+HOOK_INT(0x11EC8, 8, 1, -1, 28, 80, -1) // 00011EC8 x28+0x50
+HOOK_INT(0x11EE8, 8, 1, -1, 28, 88, -1) // 00011EE8 x28+0x58
+HOOK_INT(0x11F08, 8, 1, -1, 28, 96, -1) // 00011F08 x28+0x60
+HOOK_INT(0x11F28, 8, 1, -1, 28, 104, -1) // 00011F28 x28+0x68
+HOOK_INT(0x11F48, 8, 1, -1, 28, 112, -1) // 00011F48 x28+0x70
+HOOK_INT(0x11F68, 8, 1, -1, 28, 120, -1) // 00011F68 x28+0x78
+HOOK_INT(0x13158, 8, 1, -1, 28, 0, -1) // 00013158 x28+0x0
+HOOK_INT(0x13178, 8, 1, -1, 28, 8, -1) // 00013178 x28+0x8
+HOOK_INT(0x13198, 8, 1, -1, 28, 16, -1) // 00013198 x28+0x10
+HOOK_INT(0x131B8, 8, 1, -1, 28, 24, -1) // 000131B8 x28+0x18
+HOOK_INT(0x131D8, 8, 1, -1, 28, 32, -1) // 000131D8 x28+0x20
+HOOK_INT(0x131F8, 8, 1, -1, 28, 40, -1) // 000131F8 x28+0x28
+HOOK_INT(0x13218, 8, 1, -1, 28, 48, -1) // 00013218 x28+0x30
+HOOK_INT(0x13238, 8, 1, -1, 28, 56, -1) // 00013238 x28+0x38
+HOOK_INT(0x13258, 8, 1, -1, 28, 64, -1) // 00013258 x28+0x40
+HOOK_INT(0x13278, 8, 1, -1, 28, 72, -1) // 00013278 x28+0x48
+HOOK_INT(0x13298, 8, 1, -1, 28, 80, -1) // 00013298 x28+0x50
+HOOK_INT(0x132B8, 8, 1, -1, 28, 88, -1) // 000132B8 x28+0x58
+HOOK_INT(0x132D8, 8, 1, -1, 28, 96, -1) // 000132D8 x28+0x60
+HOOK_INT(0x132F8, 8, 1, -1, 28, 104, -1) // 000132F8 x28+0x68
+HOOK_INT(0x13318, 8, 1, -1, 28, 112, -1) // 00013318 x28+0x70
+HOOK_INT(0x13338, 8, 1, -1, 28, 120, -1) // 00013338 x28+0x78
+HOOK_INT(0x17480, 8, 1, -1, 19, 7456, -1) // 00017480 x19+0x1d20
+HOOK_INT_AFTER(0x2575C, 8, 1, +1, 19, 6816, -1) // 00025758 x19+0x1aa0
+HOOK_INT(0x47680, 8, 1, -1, 28, 1304, -1) // 00047680 x28+0x518
+HOOK_INT_REC(0x54418, 8, 1, -1, 24, 508, -1) // 00054418 x24+0x1fc
+HOOK_INT(0x56140, 8, 1, +1, 25, 432, -1) // 00056140 x25+0x1b0
+HOOK_INT(0x5DC90, 8, 1, -1, 9, 2652, -1) // 0005DC90 x9+0xa5c
+HOOK_INT(0x7BF50, 8, 1, -1, 22, 248, -1) // 0007BF50 x22+0xf8
+HOOK_INT(0x7C02C, 8, 1, +1, 22, 80, -1) // 0007C02C x22+0x50
+HOOK_INT(0x7CE44, 8, 1, +1, 9, 3064, -1) // 0007CE44 x9+0xbf8
+HOOK_INT_Z(0x830A0, 8, 1, -1, 21, 4, -1, 0, 0x8309C) // zero-tick Z fix; was HOOK_INT(0x8309C); flag producer 8309C
+HOOK_INT(0x83224, 8, 1, -1, 21, 0, -1) // 00083224 x21+0x0
+HOOK_INT(0x846C4, 8, 1, -1, 23, 76, -1) // 000846C4 x23+0x4c
+HOOK_INT(0x9A628, 8, 1, +1, 19, 6900, -1) // 0009A628 x19+0x1af4
+HOOK_INT(0xAAFE8, 8, 1, +1, 12, 188, -1) // 000AAFE8 x12+0xbc
+// IMPL-53 native (finding-23) HOOK_INT_AFTER(0xC2BE8, 8, 1, +1, 27, 2208, -1) // 000C2BE4 x27+0x8a0
+HOOK_INT(0xCC130, 8, 1, +1, 22, 24, -1) // 000CC130 x22+0x18
+HOOK_INT_AFTER_REC(0xCD7D8, 9, 1, +1, 22, 0, -1) // 000CD7D4 x22+0x0
+HOOK_INT_REC(0xCD828, 8, 1, +1, 22, 0, -1) // 000CD828 x22+0x0
+// IMPL-45 native: dispatch ordinal (finding-20) HOOK_INT(0xD03B4, 9, 1, -1, 8, 0, -1) // 000D03B4 x8+0x0
+HOOK_INT(0xD6EB0, 8, 1, +1, 21, 0, -1) // 000D6EB0 x21+0x0
+HOOK_INT(0xDBED8, 8, 1, -1, 25, 504, -1) // 000DBED8 x25+0x1f8
+HOOK_INT(0xDBEE8, 8, 1, -1, 25, 512, -1) // 000DBEE8 x25+0x200
+HOOK_INT(0xDBF2C, 8, 1, -1, 20, 172, -1) // 000DBF2C x20+0xac
+HOOK_INT(0xDC688, 9, 1, -1, 26, 3564, -1) // 000DC688 x26+0xdec
+HOOK_INT(0xDC69C, 9, 1, -1, 26, 3568, -1) // 000DC69C x26+0xdf0
+HOOK_INT(0xDD0C8, 8, 1, -1, 26, 356, -1) // 000DD0C8 x26+0x164
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0xDDAF4, 8, 1, +1, 20, 8864, -1) // 000DDAF4 x20+0x22a0
+HOOK_INT_REC(0xE9650, 8, 1, +1, 22, 40, -1) // 000E9650 x22+0x28 IMPL-49 key
+HOOK_INT_KEY_REC(0xE9810, 0xE9650, 8, 1, +1, 22, 40, -1) // 000E9810 x22+0x28 IMPL-49 shared key 0xE9650
+HOOK_INT_KEY_REC(0xE9964, 0xE9650, 8, 1, +1, 22, 40, -1) // 000E9964 x22+0x28 IMPL-49 shared key 0xE9650
+HOOK_INT_REC(0xEAC38, 8, 1, +1, 25, 2616, -1) // 000EAC38 x25+0xa38 IMPL-49 key
+HOOK_INT_KEY_REC(0xEAD6C, 0xEAC38, 8, 1, +1, 25, 2616, -1) // 000EAD6C x25+0xa38 IMPL-49 shared key 0xEAC38
+HOOK_INT_KEY_REC(0xEAEA0, 0xEAC38, 8, 1, +1, 25, 2616, -1) // 000EAEA0 x25+0xa38 IMPL-49 shared key 0xEAC38
+HOOK_INT_REC(0x1005CC, 8, 1, -1, 21, 0, -1) // 001005CC x21+0x0
+HOOK_INT(0x101798, 8, 1, -1, 22, 2552, -1) // 00101798 x22+0x9f8
+HOOK_INT(0x102250, 8, 1, -1, 22, 2552, -1) // 00102250 x22+0x9f8
+HOOK_INT(0x102DF0, 8, 1, -1, 22, 2552, -1) // 00102DF0 x22+0x9f8
+HOOK_INT_AFTER(0x10AEB8, 9, 1, -1, 21, 2620, -1) // 0010AEB4 x21+0xa3c
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x113628, 8, 1, +1, 23, 2624, -1) // 00113628 x23+0xa40
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x113720, 8, 1, +1, 23, 2628, -1) // 00113720 x23+0xa44
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x1139F8, 8, 1, +1, 23, 2628, -1) // 001139F8 x23+0xa44
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x113BBC, 8, 1, +1, 23, 2632, -1) // 00113BBC x23+0xa48
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x113C98, 8, 1, +1, 23, 2632, -1) // 00113C98 x23+0xa48
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x113EF0, 8, 1, +1, 23, 2636, -1) // 00113EF0 x23+0xa4c
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x114090, 8, 1, +1, 23, 2636, -1) // 00114090 x23+0xa4c
+HOOK_INT(0x141CB0, 8, 1, -1, 21, 2616, -1) // 00141CB0 x21+0xa38 (x19+0x16ac8)
+// IMPL-53 native (finding-23) HOOK_INT(0x16B664, 8, 1, +1, 20, 0, -1) // 0016B664 x20+0x0 (object from [sp,#0x38])
+HOOK_INT(0x19E540, 8, 1, +1, 27, 2620, -1) // 0019E540 x27+0xa3c
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x1A7388, 8, 1, +1, 22, 2620, -1) // 001A7388 x22+0xa3c
+// IMPL-52 native: finite stage index (fix review 25) HOOK_INT(0x1A8344, 8, 1, +1, 23, 2620, -1) // 001A8344 x23+0xa3c
+HOOK_INT_G(0x1B0120, 9, 1, -1, 8, 0, -1, 0, 1, 12, 0x1B011C) // zero-tick EDGE flag fix; was HOOK_INT(0x1B011C); flag producer 1B011C
+HOOK_INT_G(0x1B025C, 9, 1, -1, 8, 0, -1, 0, 1, 12, 0x1B0258) // zero-tick EDGE flag fix; was HOOK_INT(0x1B0258); flag producer 1B0258
+HOOK_INT_G(0x1B0E38, 8, 1, -1, 22, 0, -1, 0, 1, 12, 0x1B0E34) // zero-tick EDGE flag fix; was HOOK_INT(0x1B0E34); flag producer 1B0E34
+HOOK_INT(0x1B1550, 9, 1, -1, 8, 0, -1) // 001B1550 x8+0x0 (object+0x16AC8)
+HOOK_INT(0x1B706C, 8, 1, -1, 24, 120, -1) // 001B706C x24+0x78
+HOOK_INT_REC(0x1F1A0C, 8, 1, -1, 21, 2616, -1) // 001F1A0C x21+0xa38
+// IMPL-49 native (finding-21) HOOK_INT(0x1FA3D8, 8, 1, -1, 22, 2616, -1) // 001FA3D8 x22+0xa38
+HOOK_INT(0x200784, 8, 1, -1, 23, 2640, -1) // 00200784 x23+0xa50
+HOOK_INT(0x203D20, 8, 1, -1, 23, 2640, -1) // 00203D20 x23+0xa50
+HOOK_INT_G(0x20B844, 8, 1, -1, 20, 2828, -1, 0, 1, 12, 0x20B840) // zero-tick EDGE flag fix; was HOOK_INT(0x20B840); flag producer 20B840
+HOOK_INT_G(0x20C0EC, 8, 1, -1, 22, 3068, -1, 0, 1, 12, 0x20C0E8) // zero-tick EDGE flag fix; was HOOK_INT(0x20C0E8); flag producer 20C0E8
+// IMPL-53 native (finding-23) HOOK_INT(0x29C1AC, 8, 1, +1, 9, 0, -1) // 0029C1AC x9+0x0 (= [x19+0x273B8], pointer saved at [sp+0x50])
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x2A7ABC, 8, 1, +1, 20, 0, -1) // 002A7ABC x20+0x0
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x2B0CEC, 8, 1, +1, 20, 0, -1) // 002B0CEC x20+0x0
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x2B0E54, 8, 1, +1, 20, 0, -1) // 002B0E54 x20+0x0
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x2BA214, 8, 1, +1, 21, 4, -1) // 002BA214 x21+0x4
+HOOK_INT(0x2C07D4, 8, 1, -1, 22, 64, -1) // 002C07D4 x22+0x40
+HOOK_INT(0x348EAC, 8, 1, +1, 19, 4508, -1) // 00348EAC x19+0x119c
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x35170C, 8, 1, +1, 9, 0, -1) // 0035170C x9+0x0
+// IMPL-49 native (finding-21) HOOK_INT(0x355F68, 8, 1, +1, 19, 572, -1) // 00355F68 x19+0x23c
+// IMPL-49 native (finding-21) HOOK_INT(0x35613C, 8, 1, +1, 19, 572, -1) // 0035613C x19+0x23c
+HOOK_INT(0x3669D0, 8, 1, -1, 22, 264, -1) // 003669D0 x22+0x108
+HOOK_INT(0x3669E0, 8, 1, -1, 22, 272, -1) // 003669E0 x22+0x110
+#if !REPLAY_371814   // IMPL-17: the 4 per-counter hooks of owner 0x371814 are replaced by the unit replay (main.cpp); hand edit, do not regenerate
+HOOK_INT(0x371A20, 8, 1, -1, 19, 5808, -1) // 00371A20 x19+0x16b0
+HOOK_INT(0x371C8C, 8, 1, +1, 24, 2600, -1) // manual wrap counter add w9,w8,#1; cmp w9,#5; csinc w8,wzr,w8,hi; hook BEFORE on source w8
+HOOK_INT_Z(0x371CB0, 8, 1, +1, 24, 2596, 5, 5, 0x371CA8) // zero-tick Z fix; was HOOK_INT(0x371CA8); flag producer 371CAC
+HOOK_INT(0x371EAC, 8, 1, +1, 19, 5808, -1) // 00371EAC x19+0x16b0
+#endif
+HOOK_INT(0x387EF0, 8, 1, -1, 19, 6560, -1) // 00387EF0 x19+0x19a0
+HOOK_INT(0x393BD4, 8, 1, -1, 19, 6208, -1) // 00393BD4 x19+0x1840
+HOOK_INT_G(0x395398, 8, 1, -1, 19, 6336, -1, 0, 1, 12, 0x395394) // zero-tick EDGE flag fix; was HOOK_INT(0x395394); flag producer 395394
+HOOK_INT_G(0x395498, 8, 1, -1, 19, 6336, -1, 0, 1, 12, 0x395494) // zero-tick EDGE flag fix; was HOOK_INT(0x395494); flag producer 395494
+HOOK_INT_G(0x3954B4, 8, 1, -1, 19, 6336, -1, 0, 1, 12, 0x3954B0) // zero-tick EDGE flag fix; was HOOK_INT(0x3954B0); flag producer 3954B0
+HOOK_INT_G(0x395534, 8, 1, -1, 19, 6336, -1, 0, 1, 12, 0x395530) // zero-tick EDGE flag fix; was HOOK_INT(0x395530); flag producer 395530
+// IMPL-49 native (finding-21) HOOK_INT(0x39C618, 9, 1, -1, 8, 0, -1) // 0039C618 x19+4*idx+0xa084
+HOOK_INT(0x3AB180, 8, 1, +1, 19, 6608, -1) // 003AB180 x19+0x19d0
+HOOK_INT(0x3B5BE8, 8, 1, -1, 19, 6376, -1) // 003B5BE8 x0+0x18e8 (x19 = x0)
+// IMPL-53 native (finding-23) HOOK_INT(0x3BD2B4, 8, 1, +1, 21, 5132, -1) // 003BD2B4 x21+0x140c
+HOOK_INT_REC(0x3BE700, 8, 1, -1, 0, 6148, -1) // 003BE700 x0+0x1804
+HOOK_INT(0x3BE794, 9, 1, +1, 8, 0, -1) // 003BE794 x8+0x0 (global, base+0x29dbc..0x29dc8)
+HOOK_INT(0x3CF474, 8, 1, -1, 19, 7576, -1) // 003CF474 x19+0x1d98
+HOOK_INT(0x3D5C90, 8, 1, -1, 19, 8388, -1) // 003D5C90 x19+0x20c4
+// IMPL-53 native (finding-23) HOOK_INT(0x3D93E0, 8, 1, +1, 19, 7420, -1) // 003D93E0 x19+0x1cfc
+// IMPL-43 native: work ordinal (round 25) HOOK_INT(0x3E403C, 8, 1, +1, 19, 6116, -1) // 003E403C x19+0x17e4
+HOOK_INT(0x3EBC54, 8, 1, -1, 19, 16280, -1) // 003EBC54 x19+0x3f98
+HOOK_INT(0x402080, 8, 1, +1, 0, 6620, -1) // 00402080 x0+0x19dc
+HOOK_INT(0x4228E0, 8, 1, -1, 22, 10220, -1) // 004228E0 x22+0x27ec
+HOOK_INT(0x422A3C, 8, 1, -1, 22, 14676, -1) // 00422A3C x22+0x3954
+HOOK_INT(0x422AB8, 8, 1, -1, 22, 14800, -1) // 00422AB8 x22+0x39d0
+HOOK_INT(0x422E0C, 8, 1, -1, 19, 10948, -1) // 00422E0C x19+0x2ac4
+HOOK_INT(0x422E1C, 8, 1, -1, 22, 1140, -1) // 00422E1C x22+0x474
+HOOK_INT(0x422E2C, 8, 1, -1, 22, 1144, -1) // 00422E2C x22+0x478
+HOOK_INT(0x422F74, 8, 1, -1, 22, 1736, -1) // 00422F74 x22+0x6c8
+HOOK_INT_G(0x4264A4, 8, 1, -1, 20, 11892, -1, 0, 1, 12, 0x4264A0) // zero-tick EDGE flag fix; was HOOK_INT(0x4264A0); flag producer 4264A0
+HOOK_INT_AFTER(0x4264DC, 9, 1, -1, 20, 11892, -1) // 004264D8 x20+0x2e74
+HOOK_INT(0x43574C, 8, 1, -1, 19, 10872, -1) // 0043574C x19+0x2a78
+HOOK_INT(0x438E14, 9, 1, -1, 21, 13996, -1) // 00438E14 x21+0x36ac
+HOOK_INT(0x43D750, 8, 1, -1, 26, 10912, -1) // 0043D750 x26+0x2aa0
+HOOK_INT(0x43D764, 9, 1, -1, 26, 10916, -1) // 0043D764 x26+0x2aa4
+HOOK_INT_AFTER(0x472044, 9, 1, +1, 22, 44, -1) // 00472040 x22+0x2c
+HOOK_INT_AFTER(0x472154, 9, 1, +1, 22, 44, -1) // 00472150 x22+0x2c
+// IMPL-53 native (finding-23) HOOK_INT_AFTER(0x473890, 8, 1, +1, 22, 76, -1) // 0047388C x22+0x4c
+HOOK_INT_G(0x4751B4, 8, 1, -1, 22, 14844, -1, 0, 1, 12, 0x4751B0) // zero-tick EDGE flag fix; was HOOK_INT(0x4751B0); flag producer 4751B0
+HOOK_INT_REC(0x494CC8, 8, 1, +1, 22, 44, -1) // 00494CC8 x22+0x2c
+HOOK_INT_AFTER(0x4ACC8C, 9, 1, -1, 23, 11664, -1) // 004ACC88 x23+0x2d90
+HOOK_INT(0x4B2830, 8, 1, +1, 24, 8956, -1) // 004B2830 x24+0x22fc
+HOOK_INT_G(0x4B2B3C, 8, 1, -1, 24, 8904, -1, 0, 1, 12, 0x4B2B38) // zero-tick EDGE flag fix; was HOOK_INT(0x4B2B38); flag producer 4B2B38
+HOOK_INT(0x4C6F50, 8, 1, -1, 21, 11664, -1) // 004C6F50 x21+0x2d90
+HOOK_INT_G(0x4C9A94, 8, 1, -1, 22, 40, -1, 0, 1, 12, 0x4C9A90) // zero-tick EDGE flag fix; was HOOK_INT(0x4C9A90); flag producer 4C9A90
+HOOK_INT(0x4CA27C, 8, 1, -1, 22, 11664, -1) // 004CA27C x22+0x2d90
+HOOK_INT_G(0x4CAC6C, 8, 1, -1, 22, 11664, -1, 0, 1, 12, 0x4CAC68) // zero-tick EDGE flag fix; was HOOK_INT(0x4CAC68); flag producer 4CAC68
+HOOK_INT_G(0x4CB2F8, 8, 1, -1, 22, 11664, -1, 0, 1, 12, 0x4CB2F4) // zero-tick EDGE flag fix; was HOOK_INT(0x4CB2F4); flag producer 4CB2F4
+HOOK_INT_REC(0x4D4C68, 8, 1, +1, 23, 1972, -1) // 004D4C68 x23+0x7b4 (x23 = x19+0x1A7F0 base)
+HOOK_INT_REC(0x4FFAA0, 8, 1, -1, 19, 11040, -1) // 004FFAA0 x0+0x2b20 (= x19+0x2b20)
+HOOK_INT_REC(0x50066C, 8, 1, -1, 19, 11052, -1) // 0050066C x19+0x2b2c
+HOOK_INT_REC(0x501238, 8, 1, -1, 19, 11032, -1) // 00501238 x19+0x2b18
+HOOK_INT(0x545C74, 8, 1, -1, 24, 640, -1) // 00545C74 x24+0x280
+HOOK_INT(0x55A414, 8, 1, -1, 19, 956, -1) // 0055A414 x19+0x3bc
+HOOK_INT(0x55A81C, 10, 1, -1, 19, 408, -1) // 0055A81C x19+0x198
+HOOK_INT(0x55A838, 9, 1, -1, 19, 380, -1) // 0055A838 x19+0x17c
+HOOK_INT(0x55A844, 12, 1, -1, 19, 412, -1) // 0055A844 x19+0x19c
+HOOK_INT(0x55A858, 11, 1, -1, 19, 384, -1) // 0055A858 x19+0x180
+HOOK_INT(0x55A86C, 13, 1, -1, 19, 416, -1) // 0055A86C x19+0x1a0
+HOOK_INT(0x55A880, 14, 1, -1, 19, 388, -1) // 0055A880 x19+0x184
+HOOK_INT(0x55A894, 15, 1, -1, 19, 420, -1) // 0055A894 x19+0x1a4
+HOOK_INT(0x55A8A8, 17, 1, -1, 19, 392, -1) // 0055A8A8 x19+0x188
+HOOK_INT(0x55A8BC, 18, 1, -1, 19, 424, -1) // 0055A8BC x19+0x1a8
+HOOK_INT(0x55A8D0, 1, 1, -1, 19, 396, -1) // 0055A8D0 x19+0x18c
+HOOK_INT(0x55A8E4, 2, 1, -1, 19, 428, -1) // 0055A8E4 x19+0x1ac
+HOOK_INT(0x55A8F8, 3, 1, -1, 19, 400, -1) // 0055A8F8 x19+0x190
+HOOK_INT(0x55A90C, 4, 1, -1, 19, 432, -1) // 0055A90C x19+0x1b0
+HOOK_INT(0x55A920, 5, 1, -1, 19, 404, -1) // 0055A920 x19+0x194
+HOOK_INT(0x55A934, 6, 1, -1, 19, 436, -1) // 0055A934 x19+0x1b4
+HOOK_INT(0x55AC44, 8, 1, -1, 19, 492, -1) // 0055AC44 x19+0x1ec
+HOOK_INT(0x55AC54, 8, 1, -1, 19, 488, -1) // 0055AC54 x19+0x1e8
+HOOK_INT(0x55AC64, 8, 1, -1, 19, 528, -1) // 0055AC64 x19+0x210
+HOOK_INT(0x55AC74, 8, 1, -1, 19, 524, -1) // 0055AC74 x19+0x20c
+HOOK_INT(0x55AC84, 8, 1, -1, 19, 500, -1) // 0055AC84 x19+0x1f4
+HOOK_INT(0x55AC94, 8, 1, -1, 19, 504, -1) // 0055AC94 x19+0x1f8
+HOOK_INT(0x55ACA4, 8, 1, -1, 19, 1024, -1) // 0055ACA4 x19+0x400
+HOOK_INT(0x55ACBC, 8, 1, -1, 19, 560, -1) // 0055ACBC x19+0x230
+HOOK_INT(0x55AE90, 8, 1, -1, 19, 480, -1) // 0055AE90 x19+0x1e0
+HOOK_INT(0x55AF04, 8, 1, -1, 19, 516, -1) // 0055AF04 x19+0x204
+HOOK_INT(0x55B014, 8, 1, -1, 19, 1048, -1) // 0055B014 x19+0x418
+HOOK_INT(0x55B180, 8, 1, -1, 19, 1036, -1) // 0055B180 x19+0x40c
+HOOK_INT(0x55B2C8, 8, 1, -1, 24, -128, -1) // 0055B2C8 x19+0x2b8+4*i (x24-0x80)
+HOOK_INT(0x55B2DC, 9, 1, -1, 24, 0, -1) // 0055B2DC x19+0x338+4*i (x24+0)
+HOOK_INT(0x55B938, 9, 1, +1, 8, 0, -1) // 0055B938 x19+0x3e4+4*idx (idx=[x19+0x3f8])
+HOOK_INT(0x5935EC, 8, 1, +1, 0, 7760, -1) // manual IMPL-16 PER-UPDATE callback 0x5935E8 actor+0x1e50
+HOOK_INT(0x596628, 8, 1, +1, 19, 9056, -1) // 00596628 x19+0x2360
+HOOK_INT_REC(0x5DCA3C, 8, 1, -1, 0, 8288, -1) // 005DCA3C x0+0x2060 (x19+0x2060)
+HOOK_INT(0x5DD12C, 8, 1, +1, 19, 7648, -1) // 005DD12C x19+0x1de0
+HOOK_INT_REC(0x5DD50C, 8, 1, +1, 19, 7708, -1) // 005DD50C x19+0x1e1c
+HOOK_INT(0x62638C, 8, 1, -1, 19, 804, -1) // 0062638C x19+0x324
+HOOK_INT(0x627448, 8, 1, -1, 19, 1012, -1) // 00627448 x19+0x3f4
+HOOK_INT(0x628C8C, 8, 1, -1, 19, 2972, -1) // 00628C8C x19+0xb9c
+HOOK_INT(0x63E330, 8, 1, -1, 19, 1680, -1) // 0063E330 x19+0x690
+HOOK_INT(0x6843AC, 11, 1, -1, 8, 0, -1) // 006843AC x8+0x0
+HOOK_INT(0x692B8C, 8, 1, -1, 23, 888, -1) // 00692B8C x23+0x378
+HOOK_INT_REC(0x6E1C24, 12, 1, -1, 8, 0, -1) // 006E1C24 x8+0x0
+HOOK_INT_G(0x7111F0, 8, 1, -1, 19, 1828, -1, 0, 1, 12, 0x7111EC) // zero-tick EDGE flag fix; was HOOK_INT(0x7111EC); flag producer 7111EC
+HOOK_INT(0x716A64, 8, 1, -1, 19, 92, -1) // 00716A64 x19+0x5c
+// IMPL-53 native (finding-23) HOOK_INT(0x73AA54, 8, 1, +1, 0, 20, -1) // 0073AA54 x0+0x14
+// IMPL-53 native (finding-23) HOOK_INT(0x73AA6C, 8, 1, +1, 0, 24, -1) // 0073AA6C x0+0x18
+// IMPL-53 native (finding-23) HOOK_INT(0x73AA84, 8, 1, +1, 0, 28, -1) // 0073AA84 x0+0x1c
+// IMPL-53 native (finding-23) HOOK_INT(0x73FFF4, 8, 1, +1, 19, 1244, -1) // 0073FFF4 x19+0x4dc
+HOOK_INT_G(0x75BA40, 9, 1, -1, 8, 12, -1, 0, 1, 12, 0x75BA3C) // zero-tick EDGE flag fix; was HOOK_INT(0x75BA3C); flag producer 75BA3C
+HOOK_INT_G(0x75BA64, 9, 1, -1, 8, 28, -1, 0, 1, 12, 0x75BA60) // zero-tick EDGE flag fix; was HOOK_INT(0x75BA60); flag producer 75BA60
+HOOK_INT_G(0x75BA88, 9, 1, -1, 8, 44, -1, 0, 1, 12, 0x75BA84) // zero-tick EDGE flag fix; was HOOK_INT(0x75BA84); flag producer 75BA84
+HOOK_INT_G(0x75BAAC, 9, 1, -1, 8, 60, -1, 0, 1, 12, 0x75BAA8) // zero-tick EDGE flag fix; was HOOK_INT(0x75BAA8); flag producer 75BAA8
+HOOK_INT_G(0x75BAD0, 9, 1, -1, 8, 76, -1, 0, 1, 12, 0x75BACC) // zero-tick EDGE flag fix; was HOOK_INT(0x75BACC); flag producer 75BACC
+HOOK_INT_G(0x75BAF4, 9, 1, -1, 8, 92, -1, 0, 1, 12, 0x75BAF0) // zero-tick EDGE flag fix; was HOOK_INT(0x75BAF0); flag producer 75BAF0
+HOOK_INT_G(0x75BB20, 9, 1, -1, 8, 12, -1, 0, 1, 12, 0x75BB1C) // zero-tick EDGE flag fix; was HOOK_INT(0x75BB1C); flag producer 75BB1C
+HOOK_INT_G(0x75BB44, 9, 1, -1, 8, 28, -1, 0, 1, 12, 0x75BB40) // zero-tick EDGE flag fix; was HOOK_INT(0x75BB40); flag producer 75BB40
+HOOK_INT_G(0x75BB68, 9, 1, -1, 8, 44, -1, 0, 1, 12, 0x75BB64) // zero-tick EDGE flag fix; was HOOK_INT(0x75BB64); flag producer 75BB64
+HOOK_INT_G(0x75BB94, 9, 1, -1, 8, 12, -1, 0, 1, 12, 0x75BB90) // zero-tick EDGE flag fix; was HOOK_INT(0x75BB90); flag producer 75BB90
+HOOK_INT_G(0x75BBB8, 9, 1, -1, 8, 28, -1, 0, 1, 12, 0x75BBB4) // zero-tick EDGE flag fix; was HOOK_INT(0x75BBB4); flag producer 75BBB4
+HOOK_INT_G(0x75BBDC, 9, 1, -1, 8, 44, -1, 0, 1, 12, 0x75BBD8) // zero-tick EDGE flag fix; was HOOK_INT(0x75BBD8); flag producer 75BBD8
+HOOK_INT_G(0x75BC00, 9, 1, -1, 8, 60, -1, 0, 1, 12, 0x75BBFC) // zero-tick EDGE flag fix; was HOOK_INT(0x75BBFC); flag producer 75BBFC
+HOOK_INT_G(0x75BC4C, 8, 1, -1, 19, 12, -1, 0, 1, 12, 0x75BC48) // zero-tick EDGE flag fix; was HOOK_INT(0x75BC48); flag producer 75BC48
+HOOK_INT_G(0x75BC8C, 8, 1, -1, 19, 28, -1, 0, 1, 12, 0x75BC88) // zero-tick EDGE flag fix; was HOOK_INT(0x75BC88); flag producer 75BC88
+HOOK_INT_G(0x75BCCC, 8, 1, -1, 19, 44, -1, 0, 1, 12, 0x75BCC8) // zero-tick EDGE flag fix; was HOOK_INT(0x75BCC8); flag producer 75BCC8
+HOOK_INT_G(0x75BD0C, 8, 1, -1, 19, 60, -1, 0, 1, 12, 0x75BD08) // zero-tick EDGE flag fix; was HOOK_INT(0x75BD08); flag producer 75BD08
+HOOK_INT_G(0x75BD68, 8, 1, -1, 19, 76, -1, 0, 1, 12, 0x75BD64) // zero-tick EDGE flag fix; was HOOK_INT(0x75BD64); flag producer 75BD64
+HOOK_INT_G(0x75BDA8, 8, 1, -1, 19, 92, -1, 0, 1, 12, 0x75BDA4) // zero-tick EDGE flag fix; was HOOK_INT(0x75BDA4); flag producer 75BDA4
+HOOK_INT_G(0x75BDE8, 8, 1, -1, 19, 108, -1, 0, 1, 12, 0x75BDE4) // zero-tick EDGE flag fix; was HOOK_INT(0x75BDE4); flag producer 75BDE4
+HOOK_INT_G(0x75BE28, 8, 1, -1, 19, 124, -1, 0, 1, 12, 0x75BE24) // zero-tick EDGE flag fix; was HOOK_INT(0x75BE24); flag producer 75BE24
+HOOK_INT(0x75D9B8, 8, 1, -1, 19, 2896, -1) // 0075D9B8 x19+0xb50
+HOOK_INT(0x75FA48, 8, 1, -1, 19, 52, -1) // 0075FA48 x19+0x34 (obj+0x4C)
+HOOK_INT(0x760A84, 8, 1, -1, 19, 124, -1) // 00760A84 x19+0x7c
+HOOK_INT_G(0x763A8C, 8, 1, -1, 19, 8, -1, 0, 1, 12, 0x763A88) // zero-tick EDGE flag fix; was HOOK_INT(0x763A88); flag producer 763A88
+HOOK_INT(0x77362C, 8, 1, -1, 19, 2052, -1) // 0077362C x19+0x804
+HOOK_INT(0x7809F0, 8, 1, -1, 19, 6008, -1) // 007809F0 x19+0x1778
+HOOK_INT(0x780A00, 8, 1, -1, 19, 7144, -1) // 00780A00 x19+0x1be8
+HOOK_INT(0x780A10, 8, 1, -1, 19, 7744, -1) // 00780A10 x19+0x1e40
+HOOK_INT(0x780A20, 8, 1, -1, 19, 7756, -1) // 00780A20 x19+0x1e4c
+HOOK_INT(0x780A30, 8, 1, -1, 19, 7760, -1) // 00780A30 x19+0x1e50
+HOOK_INT(0x780A40, 8, 1, -1, 19, 7764, -1) // 00780A40 x19+0x1e54
+HOOK_INT(0x780A50, 8, 1, -1, 19, 7768, -1) // 00780A50 x19+0x1e58
+HOOK_INT(0x780A60, 8, 1, -1, 19, 7772, -1) // 00780A60 x19+0x1e5c
+HOOK_INT(0x780A80, 8, 1, -1, 19, 7780, -1) // 00780A80 x19+0x1e64
+HOOK_INT(0x780A90, 8, 1, -1, 19, 7784, -1) // 00780A90 x19+0x1e68
+HOOK_INT(0x780AA0, 8, 1, -1, 19, 6308, -1) // 00780AA0 x19+0x18a4
+HOOK_INT(0x780AB0, 8, 1, -1, 19, 7800, -1) // 00780AB0 x19+0x1e78
+HOOK_INT(0x780AC0, 8, 1, -1, 19, 7824, -1) // 00780AC0 x19+0x1e90
+HOOK_INT(0x780AD0, 8, 1, -1, 19, 7840, -1) // 00780AD0 x19+0x1ea0
+HOOK_INT(0x780CD4, 9, 1, -1, 19, 7788, -1) // 00780CD4 x19+0x1e6c
+HOOK_INT(0x780D48, 8, 1, -1, 19, 6292, -1) // 00780D48 x19+0x1894
+HOOK_INT(0x780DC0, 8, 1, -1, 19, 6300, -1) // 00780DC0 x19+0x189c
+HOOK_INT_REC(0x781554, 8, 1, -1, 19, 6192, -1) // 00781554 x19+0x1830
+HOOK_INT(0x7822F8, 8, 1, -1, 19, 6032, -1) // 007822F8 x0+0x1790
+HOOK_INT(0x782310, 8, 1, -1, 19, 6040, -1) // 00782310 x19+0x1798
+HOOK_INT(0x782324, 8, 1, -1, 19, 6048, -1) // 00782324 x19+0x17a0
+HOOK_INT(0x782338, 8, 1, -1, 19, 6056, -1) // 00782338 x19+0x17a8
+HOOK_INT(0x78234C, 8, 1, -1, 19, 6064, -1) // 0078234C x19+0x17b0
+HOOK_INT(0x782360, 8, 1, -1, 19, 6072, -1) // 00782360 x19+0x17b8
+HOOK_INT(0x782374, 8, 1, -1, 19, 6080, -1) // 00782374 x19+0x17c0
+HOOK_INT(0x782388, 8, 1, -1, 19, 6088, -1) // 00782388 x19+0x17c8
+HOOK_INT(0x78239C, 8, 1, -1, 19, 6096, -1) // 0078239C x19+0x17d0
+HOOK_INT(0x7823B0, 8, 1, -1, 19, 6104, -1) // 007823B0 x19+0x17d8
+HOOK_INT(0x7823C4, 8, 1, -1, 19, 6112, -1) // 007823C4 x19+0x17e0
+HOOK_INT(0x7823D8, 8, 1, -1, 19, 6120, -1) // 007823D8 x19+0x17e8
+HOOK_INT(0x7823EC, 8, 1, -1, 19, 6128, -1) // 007823EC x19+0x17f0
+HOOK_INT(0x782400, 8, 1, -1, 19, 6136, -1) // 00782400 x19+0x17f8
+HOOK_INT(0x782414, 8, 1, -1, 19, 6144, -1) // 00782414 x19+0x1800
+HOOK_INT(0x782428, 8, 1, -1, 19, 6152, -1) // 00782428 x19+0x1808
+HOOK_INT(0x78243C, 8, 1, -1, 19, 6160, -1) // 0078243C x19+0x1810
+HOOK_INT(0x782450, 8, 1, -1, 19, 6168, -1) // 00782450 x19+0x1818
+HOOK_INT(0x782464, 8, 1, -1, 19, 6176, -1) // 00782464 x19+0x1820
+HOOK_INT(0x782478, 8, 1, -1, 19, 6184, -1) // 00782478 x19+0x1828
+HOOK_INT(0x78663C, 10, 1, -1, 19, 5716, -1) // 0078663C x19+0x1654
+HOOK_INT(0x786658, 10, 1, -1, 19, 5724, -1) // 00786658 x19+0x165c
+HOOK_INT(0x786674, 10, 1, -1, 19, 5732, -1) // 00786674 x19+0x1664
+HOOK_INT(0x786690, 10, 1, -1, 19, 5740, -1) // 00786690 x19+0x166c
+HOOK_INT(0x7866AC, 10, 1, -1, 19, 5748, -1) // 007866AC x19+0x1674
+HOOK_INT(0x7866C8, 10, 1, -1, 19, 5756, -1) // 007866C8 x19+0x167c
+HOOK_INT(0x7866E4, 10, 1, -1, 19, 5764, -1) // 007866E4 x19+0x1684
+HOOK_INT(0x786700, 10, 1, -1, 19, 5772, -1) // 00786700 x19+0x168c
+HOOK_INT(0x78671C, 10, 1, -1, 19, 5780, -1) // 0078671C x19+0x1694
+HOOK_INT_AFTER(0x78673C, 9, 1, -1, 19, 5788, -1) // 00786738 x19+0x169c
+HOOK_INT_G(0x78680C, 8, 1, -1, 21, 4, -1, 0, 1, 12, 0x786808) // zero-tick EDGE flag fix; was HOOK_INT(0x786808); flag producer 786808
+HOOK_INT(0x790010, 8, 1, -1, 19, 168, -1) // 00790010 x0+0xa8
+HOOK_INT(0x790020, 8, 1, -1, 19, 172, -1) // 00790020 x19+0xac
+HOOK_INT(0x790030, 8, 1, -1, 19, 176, -1) // 00790030 x19+0xb0
+HOOK_INT(0x790040, 8, 1, -1, 19, 180, -1) // 00790040 x19+0xb4
+HOOK_INT(0x79F488, 8, 1, -1, 19, 788, -1) // 0079F488 x19+0x314
+HOOK_INT(0x7A200C, 8, 1, +1, 19, 876, -1) // 007A200C x19+0x36c
+HOOK_INT_REC(0x7A233C, 8, 1, -1, 19, 56, -1) // 007A233C x0+0x38
+HOOK_INT_REC(0x7A238C, 8, 1, -1, 19, 68, -1) // 007A238C x19+0x44
+HOOK_INT_REC(0x7A2458, 8, 1, -1, 19, 112, -1) // 007A2458 x19+0x70
+HOOK_INT_KEY_REC(0x7A2444, 0x7A238C, 8, 1, -1, 19, 68, -1) // IMPL-48 alt writer of x19+0x44 (key 7A238C)
+HOOK_INT_KEY_REC(0x7A24E4, 0x7A2458, 8, 1, -1, 19, 112, -1) // IMPL-48 alt writer of x19+0x70 (key 7A2458)
+HOOK_INT(0x7A2584, 8, 1, -1, 19, 156, -1) // 007A2584 x19+0x9c
+HOOK_INT(0x7A2594, 8, 1, -1, 19, 144, -1) // 007A2594 x19+0x90
+HOOK_INT(0x7A25A4, 8, 1, -1, 19, 152, -1) // 007A25A4 x19+0x98
+HOOK_INT(0x7A25B4, 8, 1, -1, 19, 80, -1) // 007A25B4 x19+0x50
+HOOK_INT(0x7A2790, 8, 1, -1, 19, 372, -1) // 007A2790 x19+0x174
+HOOK_INT(0x7A27A0, 8, 1, -1, 19, 172, -1) // 007A27A0 x19+0xac
+HOOK_INT_Z(0x7ADD28, 8, 1, -1, 19, 4012, -1, 0, 0x7ADD24) // zero-tick Z fix; was HOOK_INT(0x7ADD24); flag producer 7ADD24
+HOOK_INT(0x7B5F6C, 8, 1, -1, 19, 140, -1) // 007B5F6C x0+0x8c
+HOOK_INT(0x7C3834, 8, 1, -1, 19, 28, -1) // 007C3834 x19+0x1c
+HOOK_INT(0x7E2A1C, 8, 1, -1, 19, 344, -1) // 007E2A1C x0+0x158
+HOOK_INT_G(0x80E820, 8, 1, -1, 21, 100, -1, 0, 1, 12, 0x80E81C) // zero-tick EDGE flag fix; was HOOK_INT(0x80E81C); flag producer 80E81C
+HOOK_INT_G(0x80EA24, 8, 1, -1, 22, 100, -1, 0, 1, 12, 0x80EA20) // zero-tick EDGE flag fix; was HOOK_INT(0x80EA20); flag producer 80EA20
+HOOK_INT_G(0x80FB38, 8, 1, -1, 22, 8, -1, 0, 1, 12, 0x80FB34) // zero-tick EDGE flag fix; was HOOK_INT(0x80FB34); flag producer 80FB34
+HOOK_INT(0x814208, 8, 1, -1, 19, 3088, -1) // 00814208 x19+0xc10
+// IMPL-53 native (finding-23) HOOK_INT(0x86F390, 8, 1, +1, 22, 776, -1) // 0086F390 x22+0x308
+HOOK_INT(0x8C4154, 8, 1, +1, 19, 424, -1) // 008C4154 x19+0x1a8
+// IMPL-43 native: work ordinal (round 25) HOOK_INT_AFTER(0x8E4B58, 9, 1, +1, 21, 0, -1) // 008E4B54 x21+0x0
+HOOK_INT(0x8FB088, 9, 1, -1, 8, 8, -1) // 008FB088 x8+0x8
+HOOK_INT(0x8FDEE0, 9, 1, -1, 8, 8, -1) // 008FDEE0 x8+0x8
+HOOK_INT_AFTER(0x905980, 9, 1, +1, 19, 1236, -1) // 0090597C x19+0x4d4
+HOOK_INT(0x90C368, 9, 1, -1, 8, 8, -1) // 0090C368 x8+0x8
+HOOK_INT(0x92122C, 8, 1, -1, 19, 384, -1) // 0092122C x19+0x180
+HOOK_INT(0x956F04, 9, 1, +1, 8, 0, -1) // 00956F04 x8+0x0
+HOOK_INT_AFTER(0xA01608, 9, 1, +1, 19, 28, -1) // 00A01604 x19+0x1c
+HOOK_INT(0xB1E5C0, 8, 1, -1, 0, 0, -1) // 00B1E5C0 x0+0x0
+HOOK_INT(0xBA61E4, 8, 1, -1, 19, 40, -1) // 00BA61E4 x0+0x28
+HOOK_INT_G(0xBBEE1C, 9, 1, -1, 8, 0, -1, 0, 1, 12, 0xBBEE18) // zero-tick EDGE flag fix; was HOOK_INT(0xBBEE18); flag producer BBEE18
+HOOK_INT(0xBCF74C, 8, 1, -1, 19, 12, -1) // 00BCF74C x19+0xc
+HOOK_INT(0xBDEE00, 9, 1, -1, 8, 0, -1) // 00BDEE00 x8+0x0
+HOOK_INT(0xC12524, 9, 1, +1, 19, 1348, -1) // 00C12524 x19+0x544
+HOOK_INT(0xC12654, 9, 1, +1, 19, 1356, -1) // 00C12654 x19+0x54c
+HOOK_INT(0xC62104, 9, 1, -1, 8, 36, -1) // 00C62104 x8+0x24 (x8 = [x19+0x48])
+HOOK_INT(0xC625F4, 9, 1, -1, 8, 36, -1) // 00C625F4 x8+0x24 (x8 = [x19+0x48])
+HOOK_INT(0xCC390C, 9, 1, +1, 19, 48, -1) // 00CC390C x19+0x30
+HOOK_INT(0xCC4208, 8, 1, +1, 0, 100, -1) // 00CC4208 x0+0x64
+HOOK_INT(0xCC44B8, 10, 1, +1, 8, 48, -1) // 00CC44B8 x8+0x30
+HOOK_INT(0xCD9C84, 9, 1, -1, 8, 0, -1) // 00CD9C84 x8+0x0 (global pointer at 0x24ac000+0x6a0)
+HOOK_INT_Z(0xDC5C64, 8, 1, -1, 9, 1080, -1, 0, 0xDC5C60) // zero-tick Z fix; was HOOK_INT(0xDC5C60); flag producer DC5C60
+HOOK_INT_Z(0xF22254, 8, 1, +1, 19, 40, 32, 32, 0xF2224C) // zero-tick Z fix; was HOOK_INT(0xF2224C); flag producer F22250
+HOOK_INT_Z(0x11F3B94, 8, 1, -1, 19, 312, -1, 0, 0x11F3B90) // zero-tick Z fix; was HOOK_INT(0x11F3B90); flag producer 11F3B90
+HOOK_INT_MT(0x1209E60, 8, 1, -1, 23, 10, -1) // manual main-thread-only: ldrsb w8,[x23,#0xa]; subs; b.lt; strb (sound countdown, audio closure, IMPL-8 item 8)
+HOOK_INT_MT(0x120A4A0, 8, 1, -1, 23, 10, -1) // manual main-thread-only: same shape as 1209E60
+HOOK_INT_MT(0x1213168, 9, 1, -1, 20, 266, -1) // manual main-thread-only: ldrsb w9,[x20,#0x10a]; subs; b.lt; strb
+HOOK_INT_MT(0x12131D8, 9, 1, -1, 20, 282, -1) // manual main-thread-only: same shape as 1213168
+HOOK_INT_KEY(0xDC088, 0xDBED8, 8, 1, -1, 25, 504, -1) // IMPL-50 alt writer (key DBED8)
+// IMPL-52 native: finite stage index (fix review 25) HOOK_INT_KEY(0x1A82EC, 0x1A8344, 8, 1, +1, 23, 2620, -1) // IMPL-50 alt writer (key 1A8344)
+HOOK_INT_KEY(0x366950, 0x3669D0, 8, 1, -1, 22, 264, -1) // IMPL-50 alt writer (key 3669D0)
+HOOK_INT_KEY(0x3D5CE0, 0x3D5C90, 8, 1, -1, 19, 8388, -1) // IMPL-50 alt writer (key 3D5C90)
+HOOK_INT_KEY(0x422840, 0x4228E0, 8, 1, -1, 22, 10220, -1) // IMPL-50 alt writer (key 4228E0)
+HOOK_INT_KEY(0x42299C, 0x422A3C, 8, 1, -1, 22, 14676, -1) // IMPL-50 alt writer (key 422A3C)
+HOOK_INT_KEY(0x422AA8, 0x422AB8, 8, 1, -1, 22, 14800, -1) // IMPL-50 alt writer (key 422AB8)
+HOOK_INT_KEY(0x55AE38, 0x55AC44, 8, 1, -1, 19, 492, -1) // IMPL-50 alt writer (key 55AC44)
+HOOK_INT_KEY(0x55B03C, 0x55B014, 8, 1, -1, 19, 1048, -1) // IMPL-50 alt writer (key 55B014)
+HOOK_INT_KEY(0x627470, 0x627448, 8, 1, -1, 19, 1012, -1) // IMPL-50 alt writer (key 627448)
+HOOK_INT_KEY(0x760C40, 0x760A84, 8, 1, -1, 19, 124, -1) // IMPL-50 alt writer (key 760A84)
+HOOK_INT_KEY(0x780BB4, 0x7809F0, 8, 1, -1, 19, 6008, -1) // IMPL-50 alt writer (key 7809F0)
+HOOK_INT_KEY(0x7A25F4, 0x7A25A4, 8, 1, -1, 19, 152, -1) // IMPL-50 alt writer (key 7A25A4)
+HOOK_INT_KEY(0x7A2608, 0x7A25B4, 8, 1, -1, 19, 80, -1) // IMPL-50 alt writer (key 7A25B4)

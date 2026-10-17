@@ -1,0 +1,1 @@
+HOOK_RESET_CARRY(0xF22348, 0xF22254, 19, 40, 1, 1, 32, 31, 0) // IMPL-25: after `str wzr,[x19,#0x28]` (0xF22344) of the counter 0xF22254; 0xF22348 is also the b.ne skip target, so the template checks field == 0
